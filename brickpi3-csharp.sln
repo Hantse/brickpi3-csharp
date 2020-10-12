@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29521.150
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickPi3", "src\BrickPi3\BrickPi3.csproj", "{49184E74-8DA5-481E-A8B7-7916DB5D41EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickPi3", "src\BrickPi3\BrickPi3.csproj", "{49184E74-8DA5-481E-A8B7-7916DB5D41EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickPi3.Model", "BrickPi3.Model\BrickPi3.Model.csproj", "{23088056-E513-4F6A-B3B1-165B95DFBB85}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{076AB33E-D02C-4F08-98CD-CAAE5FABF87E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickPi3.Model", "src\BrickPi3.Model\BrickPi3.Model.csproj", "{28B49A32-5640-4DF4-B01D-00DC8C66ABEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{43AA9CBB-6BFE-42B1-A3B2-9532C45CF540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickPi3.Tests", "tests\BrickPi3.Tests\BrickPi3.Tests.csproj", "{050EF7DE-9E24-481F-AC2A-3CE1BED13FE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +23,22 @@ Global
 		{49184E74-8DA5-481E-A8B7-7916DB5D41EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49184E74-8DA5-481E-A8B7-7916DB5D41EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49184E74-8DA5-481E-A8B7-7916DB5D41EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23088056-E513-4F6A-B3B1-165B95DFBB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23088056-E513-4F6A-B3B1-165B95DFBB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23088056-E513-4F6A-B3B1-165B95DFBB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23088056-E513-4F6A-B3B1-165B95DFBB85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B49A32-5640-4DF4-B01D-00DC8C66ABEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B49A32-5640-4DF4-B01D-00DC8C66ABEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B49A32-5640-4DF4-B01D-00DC8C66ABEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B49A32-5640-4DF4-B01D-00DC8C66ABEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050EF7DE-9E24-481F-AC2A-3CE1BED13FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050EF7DE-9E24-481F-AC2A-3CE1BED13FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050EF7DE-9E24-481F-AC2A-3CE1BED13FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050EF7DE-9E24-481F-AC2A-3CE1BED13FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49184E74-8DA5-481E-A8B7-7916DB5D41EF} = {076AB33E-D02C-4F08-98CD-CAAE5FABF87E}
+		{28B49A32-5640-4DF4-B01D-00DC8C66ABEB} = {076AB33E-D02C-4F08-98CD-CAAE5FABF87E}
+		{050EF7DE-9E24-481F-AC2A-3CE1BED13FE4} = {43AA9CBB-6BFE-42B1-A3B2-9532C45CF540}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED001A53-0EDE-471E-9CFB-1E9AB0FA14AA}
